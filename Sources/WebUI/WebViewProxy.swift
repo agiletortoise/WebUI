@@ -114,6 +114,16 @@ public final class WebViewProxy: ObservableObject {
     public func goForward() {
         webView?.wrappedValue.goForward()
     }
+    
+    /// update opacity setting.
+    public var isOpaque: Bool {
+        get {
+            return webView?.wrappedValue.isOpaque ?? false
+        }
+        set {
+            webView?.wrappedValue.isOpaque = newValue
+        }
+    }
 
     /// Evaluates the specified JavaScript string.
     /// - Parameters:
