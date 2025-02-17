@@ -5,16 +5,15 @@
 
 WebUI is a Swift package that provides WKWebView wrapped by SwiftUI.
 
-[![Github issues](https://img.shields.io/github/issues/cybozu/WebUI)](https://github.com/cybozu/WebUI/issues)
 [![Github forks](https://img.shields.io/github/forks/cybozu/WebUI)](https://github.com/cybozu/WebUI/network/members)
 [![Github stars](https://img.shields.io/github/stars/cybozu/WebUI)](https://github.com/cybozu/WebUI/stargazers)
-[![Top language](https://img.shields.io/github/languages/top/cybozu/WebUI)](https://github.com/cybozu/WebUI/)
-[![Release](https://img.shields.io/github/v/release/cybozu/WebUI)]()
-[![Github license](https://img.shields.io/github/license/cybozu/WebUI)](https://github.com/cybozu/WebUI/)
+[![Github issues](https://img.shields.io/github/issues/cybozu/WebUI)](https://github.com/cybozu/WebUI/issues)
+[![Github release](https://img.shields.io/github/v/release/cybozu/WebUI)](https://github.com/cybozu/WebUI/releases)
+[![Github license](https://img.shields.io/github/license/cybozu/WebUI)](https://github.com/cybozu/WebUI/blob/main/LICENSE)
 
 ## Requirements
 
-- Development with Xcode 16.0+
+- Development with Xcode 16.2+
 - Written in Swift 6.0
 - Compatible with iOS 16.4+
 - Compatible with macOS 13.3+
@@ -128,10 +127,11 @@ WebUI is available through [Swift Package Manager](https://github.com/apple/swif
 **CLI**
 
 1. Create `Package.swift` that describes dependencies.
+
    ```swift
    // swift-tools-version: 6.0
    import PackageDescription
-   
+
    let package = Package(
        name: "SomeProduct",
        products: [
@@ -150,6 +150,7 @@ WebUI is available through [Swift Package Manager](https://github.com/apple/swif
        ]
    )
    ```
+
 2. Run the following command in Terminal.
    ```sh
    $ swift package resolve
