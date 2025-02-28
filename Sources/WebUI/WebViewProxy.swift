@@ -121,7 +121,9 @@ public final class WebViewProxy: ObservableObject {
             return webView?.wrappedValue.isOpaque ?? false
         }
         set {
+            #if os(iOS) // read-only on macOS
             webView?.wrappedValue.isOpaque = newValue
+            #endif
         }
     }
 
